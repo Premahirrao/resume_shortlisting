@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Theme: Yellow/Black/White */
+  --bg: #fffbe6;            /* light yellow background */
+  --surface: #ffffff;       /* white for cards/surfaces */
+  --accent: #ffe066;        /* yellow accent */
+  --accent-strong: #f4c542; /* darker yellow */
+  --text: #111111;          /* black text */
+  --muted: #6b7280;         /* muted gray */
+  --border: #ffe066;        /* yellow border */
+  --shadow: 0 6px 24px rgba(17,17,17,0.08);
+  --radius: 10px;
+  --radius-sm: 6px;
+  --transition: 180ms cubic-bezier(.2,.9,.2,1);
+  
+  /* Legacy Tailwind variables (for compatibility) */
+  --accent-foreground: #111111;
+  --destructive: #d9534f;
+  --destructive-foreground: #ffffff;
+  --ring: #ffe066;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+/* Remove default link colors */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography consistency */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+/* Ensure buttons inherit font */
+button, input, select, textarea {
+  font: inherit;
+}
