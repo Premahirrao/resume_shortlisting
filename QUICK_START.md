@@ -30,6 +30,7 @@ pip install -r requirements.txt
 ### 3. Start Services
 ```powershell
 # Terminal 1: Backend
+source .venv/Scripts/activate
 python -m uvicorn server:app --host 127.0.0.1 --port 8000
 
 # Terminal 2: Frontend

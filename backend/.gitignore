@@ -1,0 +1,42 @@
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment and installers
+pip-wheel-metadata/
+build/
+dist/
+
+# Environment files (keep secrets out of git)
+.env
+.env.*
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# mypy / typing caches
+.mypy_cache/
+
+# Editor folders
+.vscode/
+/.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tesseract tessdata (if you keep a local tessdata dir, don't commit it)
+tessdata/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+.env
+
+.*env.*.local
